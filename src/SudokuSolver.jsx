@@ -188,7 +188,7 @@ export default function SudokuSolver() {
       setPreviewUrl(dataUrl);
       const base64 = dataUrl.split(",")[1];
 
-      const response = await fetch("/api/anthropic/v1/messages", {
+      const response = await fetch("/api/scan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
