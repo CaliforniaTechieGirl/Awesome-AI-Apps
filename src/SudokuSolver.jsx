@@ -233,7 +233,7 @@ Read every row carefully from top to bottom, left to right.`
       setScanStatus(`✓ Detected ${newGiven.size} clues — review then hit Solve`);
     } catch (err) {
       console.error(err);
-      setScanStatus(`⚠ ${err.message}`);
+      setScanStatus("⚠ Scan failed — try a clearer photo or enter manually");
     } finally {
       setScanning(false);
     }
